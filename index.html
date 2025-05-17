@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Ditto Sound</title>
-  </head>
-  <body>
-    <h2>Ditto!</h2>
-    <audio autoplay controls>
-      <source src="audio_ditto.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Ditto Sound</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    audio {
+      width: 90%;
+      max-width: 500px;
+      outline: none;
+    }
+    .note {
+      margin-top: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ditto!</h1>
+  <audio controls autoplay>
+    <source src="audio_ditto.mp3" type="audio/mpeg">
+    브라우저가 오디오를 지원하지 않습니다.
+  </audio>
+  <div class="note">※ 자동 재생이 안 될 경우, 재생 버튼을 눌러주세요.</div>
+</body>
 </html>
